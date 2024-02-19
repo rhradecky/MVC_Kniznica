@@ -1,6 +1,6 @@
 from controller import Kniznica
 from model import Kniha
-#from view import ShoesView
+from view import Sklad
 
 
 
@@ -13,12 +13,13 @@ kniha3 = Kniha("Vkladna Knizka", "Slovenska Sporitelna", 1103, 2000)
 
 
 kniznica = Kniznica()
+sklad = Sklad()
 kniznica.pridaj_knihu(kniha1)
 kniznica.pridaj_knihu(kniha2)
 kniznica.pridaj_knihu(kniha3)
 print("******************")
 kniznica.vypozicaj_knihu(1001)
-kniznica.zobraz_dostupne_knihy()
+sklad.zobraz_dostupne_knihy()
 print("******************")
 kniznica.vratit_knihu(1001)
-kniznica.zobraz_dostupne_knihy()
+sklad.zobraz_dostupne_knihy()
